@@ -146,7 +146,3 @@ MIT License – free to use and modify.
 ---
 
 👉 This project is meant as a **launchpad** for experimenting with enterprise-ready Spring Boot features without polluting the base project.
-
----
-
-Would you like me to also **generate the starter Gradle Kotlin DSL build files + Java 21 Spring Boot skeleton code** so you can push it to GitHub directly as your soul project?
