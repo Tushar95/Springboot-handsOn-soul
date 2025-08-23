@@ -26,8 +26,21 @@ repositories {
 }
 
 dependencies {
+	// implementations
+	implementation("org.springframework.boot:spring-boot-starter-logging")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	implementation("org.springframework.boot:spring-boot-starter-aop")
+	// Resilience4j Spring Boot 3 integration
+	implementation("io.github.resilience4j:resilience4j-spring-boot3:2.2.0")
+
+	// Optional: add specific modules if you want finer control
+	// Comment out what you don't need
+	implementation("io.github.resilience4j:resilience4j-circuitbreaker:2.2.0")
+	implementation("io.github.resilience4j:resilience4j-retry:2.2.0")
+	implementation("io.github.resilience4j:resilience4j-ratelimiter:2.2.0")
+	implementation("io.github.resilience4j:resilience4j-timelimiter:2.2.0")
+
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
